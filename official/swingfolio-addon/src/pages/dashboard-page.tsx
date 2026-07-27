@@ -130,7 +130,16 @@ const MobilePeriodSelect: React.FC<{
         <Icons.ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
       </Button>
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="bottom" className="mx-1 rounded-t-4xl">
+        {/* Bottom padding clears the app's floating mobile nav bar (plus safe
+            area), which otherwise overlays the last row of period options.
+            --mobile-nav-total-offset is set by the Wealthfolio shell. Inline
+            style rather than an arbitrary Tailwind class because addons rely
+            on the host's pre-compiled stylesheet. */}
+        <SheetContent
+          side="bottom"
+          className="mx-1 rounded-t-4xl"
+          style={{ paddingBottom: "calc(var(--mobile-nav-total-offset, 0px) + 1.5rem)" }}
+        >
           <SheetHeader className="text-left">
             <SheetTitle>Time period</SheetTitle>
             <SheetDescription>Choose the range used for performance metrics</SheetDescription>

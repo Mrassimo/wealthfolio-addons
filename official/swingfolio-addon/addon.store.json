@@ -11,16 +11,16 @@
     "calendar"
   ],
   "release": {
-    "version": "3.6.2",
+    "version": "3.6.3",
     "minWealthfolioVersion": "3.6.2",
     "sdkVersion": "3.6.2",
     "critical": false,
     "breaking": false,
-    "notes": "Requires Wealthfolio 3.6.2 or later.",
+    "notes": "Fixes the mobile time-period picker being partly hidden behind the navigation bar.",
     "changelogUrl": "https://github.com/wealthfolio/wealthfolio-addons/tree/main/official/swingfolio-addon/CHANGELOG.md"
   },
   "distribution": {
-    "r2Path": "swingfolio-addon/3.6.2/swingfolio-addon.zip"
+    "r2Path": "swingfolio-addon/3.6.3/swingfolio-addon.zip"
   },
   "media": {
     "coverLight": "assets/cover-light.webp",
