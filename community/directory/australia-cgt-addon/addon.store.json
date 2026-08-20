@@ -8,9 +8,9 @@
     "url": "https://github.com/Mrassimo"
   },
   "trust": "community",
-  "verification": "unverified",
   "status": "active",
   "tags": ["tax", "australia", "cgt", "planning", "reporting"],
+  "commercialModel": "free",
   "repository": "https://github.com/Mrassimo/wealthfolio-australia-cgt-addon",
   "supportUrl": "https://github.com/Mrassimo/wealthfolio-australia-cgt-addon/issues"
 }
